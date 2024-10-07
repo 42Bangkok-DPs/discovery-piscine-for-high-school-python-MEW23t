@@ -1,3 +1,4 @@
 first = 'krittiphat'
 last = 'kitkannikar'
-print (first+' '+last)
+n = (first+' '+last)
+print (n)
