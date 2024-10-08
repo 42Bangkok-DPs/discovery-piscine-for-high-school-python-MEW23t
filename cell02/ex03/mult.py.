@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 F = int(input("pick a number: "))
 L = int(input("pick another number: "))
 Number = F * L
