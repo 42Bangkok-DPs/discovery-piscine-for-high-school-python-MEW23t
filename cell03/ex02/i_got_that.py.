@@ -1,1 +1,7 @@
-
+while True:
+    user_input = input("('STOP' to exit) ")
+    if user_input.upper() == "STOP":
+        print("Exiting")
+        break
+    else:
+        print(f"entered {user_input}")
