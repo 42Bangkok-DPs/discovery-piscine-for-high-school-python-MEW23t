@@ -1,1 +1,4 @@
-
+F = input("Firstname: ")
+L = input("Lastname: ")
+name = F + ' ' + L
+print(name)
