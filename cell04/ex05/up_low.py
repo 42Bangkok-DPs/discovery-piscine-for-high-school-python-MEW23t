@@ -1,4 +1,4 @@
 #!/usr/bin/env python
-word = input("Please enter a word: ")
-lowercase_word = word.lower()
-print(f"The word in lowercase is: {lowercase_word}")
+user_input = input("Please enter a string: ")
+swapped_case = user_input.swapcase()
+print(f"The string with swapped case is: {swapped_case}")
