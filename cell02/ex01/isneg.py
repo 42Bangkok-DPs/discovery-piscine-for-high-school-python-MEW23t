@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 number = float(input("Please enter a number: "))
 if number > 0:
     print("plus")
