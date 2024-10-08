@@ -1,4 +1,6 @@
 #!/usr/bin/env python
-word = input("Please enter a word: ")
-lowercase_word = word.lower()
-print(f"The word in lowercase is: {lowercase_word}")
+import math
+g= input("number: ")
+number = float(g)
+rounded= math.ceil(number)
+print(f"The number rounded up is: {rounded}")
