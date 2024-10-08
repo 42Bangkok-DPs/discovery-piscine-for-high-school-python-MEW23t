@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 F = input("Firstname: ")
 L = input("Lastname: ")
 name = F + ' ' + L
