@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 number = int(input("Enter a number for the multiplication table: "))
 
 print(f"Multiplication table for {number}:")
