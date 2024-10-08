@@ -1,5 +1,12 @@
 #!/usr/bin/env python
-F = int(input("pick a number: "))
-L = int(input("pick another number: "))
+F = int(input("pick number: "))
+L = int(input("pick number: "))
 Number = F * L
-print(Number)
+if Number < 0:
+    print (Number,"negative")
+elif Number > 0:
+    print (Number,"positive")
+elif Number == 0:
+    print (Number,"Zero")
+else:
+    print("Error")
