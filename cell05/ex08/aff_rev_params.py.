@@ -1,1 +1,8 @@
+import sys
 
+if len(sys.argv) < 3:
+    print("none")
+else:
+    rargs = sys.argv[1:][::-1]
+    for arg in rargs:
+        print(arg)
