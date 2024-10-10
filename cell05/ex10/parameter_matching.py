@@ -6,8 +6,8 @@ def main():
         print("none")
         return
     parameter = sys.argv[1]
-    input = input("word: ")
-    if user_input == parameter:
+    user = input("Enter a word: ")
+    if user == parameter:
         print("Good job!")
     else:
         print("Nope, sorry...")
