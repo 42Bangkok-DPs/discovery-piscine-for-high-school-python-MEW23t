@@ -1,2 +1,0 @@
-result = upcase_it("hello")
-print(result)
