@@ -1,1 +1,58 @@
+def is_king_in_check(board):
+    king_pos = None
+    for r in range(len(board)):
+        for c in range(len(board[r])):
+            if board[r][c] == 'K':
+                king_pos = (r, c)
+                break
+        if king_pos:
+            break
 
+    if not king_pos:
+        return "Error:not found"
+
+    king_row, king_col = king_pos
+    directions = {
+        'rook': [(1, 0), (-1, 0), (0, 1), (0, -1)],
+        'bishop': [(1, 1), (1, -1), (-1, 1), (-1, -1)],
+        'queen': [(1, 0), (-1, 0), (0, 1), (0, -1), (1, 1), (1, -1), (-1, 1), (-1, -1)],
+        'pawn': [(1, -1), (1, 1)] 
+    }
+    for piece_type, moves in directions.items():
+        for dr, dc in moves:
+            r, c = king_row, king_col
+            while 0 <= r < len(board) and 0 <= c < len(board[r]):
+                r += dr
+                c += dc
+                if 0 <= r < len(board) and 0 <= c < len(board[r]):
+                    if board[r][c] != '.':
+                        if piece_type == 'rook' and board[r][c] == 'R':
+                            return "Success\n"
+                        if piece_type == 'bishop' and board[r][c] == 'B':
+                            return "Success\n"
+                        if piece_type == 'queen' and board[r][c] == 'Q':
+                            return "Success\n"
+                        if piece_type == 'pawn' and board[r][c] == 'P':
+                            if r - king_row == 1:
+                                return "Success\n"
+                        break
+
+    return "Fail\n"
+board = [
+    "......",
+    "...R..",
+    "......",
+    "..K...",
+    ".P....",
+    "......"
+]
+board1 = [
+    "....B.",
+    "......",
+    "......",
+    "..K...",
+    "..P...",
+    "......"]
+
+print(is_king_in_check(board))
+print(is_king_in_check(board1))
