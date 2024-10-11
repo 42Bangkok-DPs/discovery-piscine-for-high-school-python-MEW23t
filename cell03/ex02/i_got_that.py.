@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 while True:
-    user_input = input("('STOP' to exit) ")
-    if user_input.upper() == "STOP":
+    user = input("('STOP' to exit) ")
+    if user.upper() == "STOP":
         print("Exiting")
         break
     else:
-        print(f"entered {user_input}")
+        print(f"entered {user}")
