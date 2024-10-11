@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-number = float(input("Please enter a number: "))
+number = float(input("number: "))
 if number > 0:
     print("plus")
 elif number < 0:
