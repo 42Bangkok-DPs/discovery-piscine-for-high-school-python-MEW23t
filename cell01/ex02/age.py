@@ -1,4 +1,4 @@
 #!/usr/bin/env python
 age = 17
-my_age = age + 42
-print(my_age)
+myage = age + 42
+print(myage)
