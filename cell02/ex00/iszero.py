@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-number = float(input("Please enter a number: "))
+number = float(input("number: "))
 if number == 0:
-    print("This number is equal to zero.")
+    print("number equal to zero.")
 else:
-    print("This number is different from zero.")
+    print("number different from zero.")
