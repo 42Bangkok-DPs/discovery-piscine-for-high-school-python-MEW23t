@@ -2,9 +2,9 @@
 n = input("number: ")
 try:
     number = float(n)
-    if number.is_integer():
-        print("number is an integer.")
+    if number.integer():
+        print("numberinteger.")
     else:
-        print("number is a decimal.")
+        print("numberdecimal.")
 except ValueError:
-    print("That's not a valid number.")
+    print("number.")
