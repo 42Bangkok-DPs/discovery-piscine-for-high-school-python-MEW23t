@@ -1,1 +1,7 @@
-
+#!/usr/bin/env python
+array = [7,2,3,4,8,57]
+plus = []
+for number in array:
+    plus.append(number + 2)
+print ("number:",array)
+print ("number:",plus)    
