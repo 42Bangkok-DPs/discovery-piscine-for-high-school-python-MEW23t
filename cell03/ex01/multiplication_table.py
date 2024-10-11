@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-number = int(input("Enter a number for the multiplication table: "))
+number = int(input("multiplication table: "))
 
 print(f"Multiplication table for {number}:")
 
