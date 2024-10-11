@@ -7,4 +7,4 @@ for number in array:
         plus.add(number)
 plus_list = list(plus)
 print("array:", array)
-print("Numbers(duplicates):", plus_list)
+print("Numbers(duplicates):", pluslist)
