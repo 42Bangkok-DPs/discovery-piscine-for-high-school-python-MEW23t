@@ -1,4 +1,4 @@
 #!/usr/bin/env python
-word = input("Please enter a word: ")
+word = input("enterword: ")
 upper = word.upper()
-print(f"The word in uppercase is: {upper}")
+print(f"word uppercase is: {upper}")
