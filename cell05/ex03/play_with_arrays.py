@@ -5,6 +5,6 @@ plus = set()
 for number in array:
     if number + 2 > 5:
         plus.add(number)
-plus_list = list(plus)
+pluslist = list(plus)
 print("array:", array)
 print("Numbers(duplicates):", pluslist)
